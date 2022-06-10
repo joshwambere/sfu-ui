@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+.player{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000;
+}
+
+#user1{
+    display: none;
+}
+.small-frame{
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    height: 170px;
+    width: 300px;
+    border: 2px solid #3791f3;
+    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.75);
+    border-radius: .25rem;
+    object-fit: cover;
+}
+.controls{
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+.control-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #3791f3;
+    border-radius: 50%;
+    padding: 1rem;
+}
+#leave{
+    background: #f00;
+}
+.control-cont>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.lobby{
+    background: #1a1818;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-apollo{
+    border-radius: .5rem;
+    background: #262525;
+    color: #fff;
+    min-width: 320px;
+}
+.header{
+    padding: 2rem 1.4rem;
+    background: #363535;
+    border-radius: .5rem .5rem 0 0;
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+.inputs > input{
+    padding:.5rem;
+    margin: .75rem 0 0 0;
+    border-radius: .25rem;
+    outline: none;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+#join{
+    background: #3791f3;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.video-cart{
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-tab{
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#hangup{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 2rem;
+    right: 50%;
+    background: #ff0000;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+#hangup >img{
+    height: 2rem;
+    width: 2rem;
+}
+.end{
+    background: black;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+.container-thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+#my-button{
+    position: fixed;
+    bottom: 45%;
+    right: 50%;
+    background: #3791f3;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+#my-button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .small-frame{
+        width: 140px;
+        height: 200px;
+        top: 1rem;
+    }
+}
